@@ -1,6 +1,5 @@
 # Sentiment Analysis
 Natural Language processing has a lot of branches. Sentiment analysis is one of them. Sentiment analysis can be defined as classifying text into different classes based on its texture. For gathering meaningful information from a text and use AI for classification use of IMDB dataset has been considered. IMDb reviews consist of 50,000 movie reviews in English (25,000 for training, 25,000 for testing) extracted from the famous Internet Movie Database, along with a simple binary target for each review indicating whether it is negative (0) or positive (1). This data set is very simple and has been decoded and preprocessed before. So, the input of training and testing for this data is number instead of alphabetic character. Labels of these reviews are stored as "0" and "1".  For dealing with this classification task 2-layer GRU with 2 layers of dropout among them have been used. The structure of the models and their parameters has shown in Figure1.
-![image](https://user-images.githubusercontent.com/85686755/136421066-2df7386c-ee50-42ec-8b75-048a0d4fdfcb.png)
 
  
 Figure 1. Specification and information of model.
@@ -8,8 +7,6 @@ Many of these reviews are very large and extracting negative or positive structu
 The result of training model for 10 epochs has shown in Figure 2.
  
 Figure 2. Result of accuracy and loss for 10 epochs.
-![image](https://user-images.githubusercontent.com/85686755/136421118-31dfae66-0a41-4458-aefa-259dcdd9eaa1.png)
 
 The result shows good accuracy on training but not a good accuracy on the validation set. For avoiding this procedure Drop out layer has been used. For increasing the result on validation, it is better to use full sentences as input data.
-![image](https://user-images.githubusercontent.com/85686755/136421013-48e75363-2ac6-40e8-b82c-5d2fefbc4eca.png)
-
+![image](https://user-images.githubusercontent.com/85686755/136421288-70e7f0b0-3c83-492a-92ee-7e07ed9f7485.png)
