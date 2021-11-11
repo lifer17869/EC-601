@@ -12,11 +12,7 @@ A unit test is a smaller test, one that checks that a single component operates 
  
 Figure1. Testing the code with unit test
 
-def test_code():
-    assert sentiment_analysis('hsdgxbhg ') == netrual, "Should be 6"
-if __name__ == "__main__":
-    test_code ()
-    print("Everything passed")
+
 ![image](https://user-images.githubusercontent.com/85686755/141327293-9f3c8afe-f372-4370-89e3-ecd38a49e6a0.png)
 
 
